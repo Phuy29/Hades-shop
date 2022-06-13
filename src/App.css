@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  padding: 0 4rem;
+  font-size: 14px;
+  font-family: "Oswald", sans-serif;
+}
+
+.text-gradient {
+  display: inline-block;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(90deg, #ff7170 2.34%, #ffe57f 100.78%);
+}
