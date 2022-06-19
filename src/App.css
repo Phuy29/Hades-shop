@@ -7,11 +7,15 @@
 }
 
 body {
-  min-height: 100vh;
   scroll-behavior: smooth;
-  padding: 0 4rem;
-  font-size: 14px;
   font-family: "Oswald", sans-serif;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .text-gradient {

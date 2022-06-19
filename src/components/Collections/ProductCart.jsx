@@ -1,37 +1,37 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
 
 const ProductCard = ({ id, name, price, imageUrl }) => {
-  const [isAdded, setIsAdded] = useState(false);
-  const { setMyCart, setTotal } = useContext(CartContext);
+  const { setMyCart, setTotal, setOpenSlideCart } = useContext(CartContext);
   const handleClick = () => {
-    setIsAdded(true);
     const newItem = {
+      id: id,
       name: name,
       price: price,
       imageUrl: imageUrl,
     };
-    setMyCart((item) => [...item, newItem]);
+    setMyCart((item) => {
+      const newCart = [...item, newItem];
+
+      return newCart;
+    });
     setTotal((total) => {
       total += price;
     });
+    setOpenSlideCart(true);
   };
 
   return (
     <div className="text-center cursor-pointer">
       <div className="relative group">
-        <div className="">
+        <div>
           <img src={imageUrl} alt="" />
         </div>
         <div className="gap-3 absolute bottom-3 w-full flex opacity-0 group-hover:opacity-100 transition-all ease-in duration-500 group-hover:animate-slideDown">
           <div className="ct-button">Buy now</div>
-          {isAdded ? (
-            <div className="ct-button opacity-50">Added</div>
-          ) : (
-            <div className="ct-button" onClick={handleClick}>
-              Add to card
-            </div>
-          )}
+          <div className="ct-button" onClick={handleClick}>
+            Add to card
+          </div>
         </div>
       </div>
       <div className="mt-[15px]">

@@ -16,9 +16,9 @@ const Cart = () => {
     <div className="flex justify-center items-center flex-col">
       <div className="px-[80px] py-10 border-slate-500 border w-[600px]">
         <div className="uppercase text-center text-20 mb-8">Cart</div>
-        {myCart.map((item) => {
+        {myCart.map((item, index) => {
           return (
-            <div>
+            <div key={index}>
               <div className="flex gap-3 py-3 my-4 border-b border-slate-300">
                 <img
                   src={item.imageUrl}
