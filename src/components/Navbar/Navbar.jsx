@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const { myCart, setOpenSlideCart, setOpenSearch } = useContext(CartContext);
   return (
-    <>
-      <div className="flex items-center h-[66px] w-full">
+    <div className="fixed z-[10000] px-14 top-0 w-full bg-white">
+      <div className="flex items-center h-[66px]">
         <Link to="/">
           <img
             src="https://theme.hstatic.net/1000306633/1000859591/14/logo.png?v=314"
@@ -173,7 +173,7 @@ const Navbar = () => {
           </div>
         </div>
       </div> */}
-    </>
+    </div>
   );
 };
 

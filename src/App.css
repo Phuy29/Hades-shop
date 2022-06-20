@@ -11,7 +11,7 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
-.wrapper {
+.container {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;

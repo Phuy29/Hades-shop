@@ -44,7 +44,7 @@ function App() {
         <div className="wrapper">
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home allPros={allPros} />} />
             <Route
               path="/collections"
               element={<Collections allPros={allPros} />}

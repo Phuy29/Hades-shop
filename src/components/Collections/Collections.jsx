@@ -1,7 +1,7 @@
 import { useState, Fragment } from "react";
-import ProductCard from "./ProductCart";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
+import ProductList from "./ProductList";
 
 const options = [
   { name: "PRICE LOW TO HIGH" },
@@ -15,10 +15,10 @@ const Collections = ({ allPros }) => {
   const [selected, setSelected] = useState(options[3]);
 
   return (
-    <>
-      <div className="w-56 mt-10 cursor-pointer float-right">
+    <div className="px-14">
+      <div className="w-56 cursor-pointer float-right">
         <Listbox value={selected} onChange={setSelected}>
-          <div className="relative mt-1 z-10">
+          <div className="relative mt-1 z-10 top-24">
             <Listbox.Button className="relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md sm:text-sm">
               <span className="block truncate">{selected.name}</span>
               <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
@@ -69,21 +69,10 @@ const Collections = ({ allPros }) => {
         </Listbox>
       </div>
 
-      <section className="grid grid-cols-4 grid-rows-2 my-20 gap-y-5 gap-x-4">
-        {allPros.map((item) => {
-          return (
-            <div key={item.id}>
-              <ProductCard
-                id={item.id}
-                name={item.name}
-                price={item.price}
-                imageUrl={item.imageUrl}
-              />
-            </div>
-          );
-        })}
+      <section className="float-left">
+        <ProductList allPros={allPros} />
       </section>
-    </>
+    </div>
   );
 };
 
