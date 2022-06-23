@@ -20,70 +20,54 @@ const Navbar = () => {
           className="ml-2 h-[6px]"
         /> */}
 
-        <ul class="flex justify-start items-center text-10 gap-6 mr-[350px]">
+        <ul className="flex justify-start items-center text-10 gap-6 mr-[350px]">
           <li>
-            <a class="font-oswald" href="/collections" title="SHOP ALL">
+            <a href="/collections" title="SHOP ALL">
               SHOP ALL
             </a>
           </li>
           <li>
-            <a class="font-oswald" href="/collections/top" title="TOPS">
+            <a href="/collections/top" title="TOPS">
               TOPS
             </a>
           </li>
           <li>
-            <a class="font-oswald" href="/collections/bottoms" title="BOTTOMS">
+            <a href="/collections/bottoms" title="BOTTOMS">
               BOTTOMS
             </a>
           </li>
           <li>
-            <a
-              class="font-oswald"
-              href="/collections/outerwear"
-              title="OUTERWEAR"
-            >
+            <a href="/collections/outerwear" title="OUTERWEAR">
               OUTERWEAR
             </a>
           </li>
           <li>
-            <a
-              class="font-oswald"
-              href="/collections/footwear"
-              title="FOOTWEAR"
-            >
+            <a href="/collections/footwear" title="FOOTWEAR">
               FOOTWEAR
             </a>
           </li>
           <li>
-            <a class="font-oswald" href="/collections/hat" title="HAT">
+            <a href="/collections/hat" title="HAT">
               HAT
             </a>
           </li>
           <li>
-            <a class="font-oswald" href="/collections/sweater-1" title="BAGS">
+            <a href="/collections/sweater-1" title="BAGS">
               BAGS
             </a>
           </li>
           <li>
-            <a class="font-oswald" href="/collections/sale" title="SALE">
+            <a href="/collections/sale" title="SALE">
               SALE
             </a>
           </li>
           <li>
-            <a
-              class="font-oswald"
-              href="/collections/flash-sale"
-              title="FLASH SALE  12.06.2022🔥"
-            >
+            <a href="/collections/flash-sale" title="FLASH SALE  12.06.2022🔥">
               FLASH SALE 12.06.2022🔥
             </a>
           </li>
           <li>
-            <a
-              class="font-oswald"
-              href="https://hades.vn/pages/tuyen-dung"
-              title="RECRUITMENT"
-            >
+            <a href="https://hades.vn/pages/tuyen-dung" title="RECRUITMENT">
               RECRUITMENT
             </a>
           </li>
@@ -109,11 +93,11 @@ const Navbar = () => {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                stroke-width="2"
+                strokeWidth="2"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeinejoin="round"
                   d="M19 9l-7 7-7-7"
                 />
               </svg>

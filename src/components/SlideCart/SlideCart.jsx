@@ -90,7 +90,7 @@ const SlideCart = () => {
                                       <img
                                         src={item.imageUrl}
                                         alt=""
-                                        className="h-[112px] border border-slate-300"
+                                        className="h-[118px] w-52 border border-slate-300"
                                       />
                                       <div className="w-[300px] ml-3 pt-12">
                                         <p>{item.name}</p>

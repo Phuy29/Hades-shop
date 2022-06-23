@@ -9,6 +9,7 @@ import axios from "axios";
 import { CartContext } from "./components/Context/CartContext";
 import SlideCart from "./components/SlideCart/SlideCart";
 import Search from "./components/Search/Search";
+import Product from "./components/Product/Product";
 
 function App() {
   const [allPros, setAllPros] = useState([]);
@@ -50,6 +51,7 @@ function App() {
               element={<Collections allPros={allPros} />}
             />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/product" element={<Product />} />
           </Routes>
           <SlideCart />
           <Search />
